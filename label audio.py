@@ -3,10 +3,11 @@ import librosa
 
 
 
-t = 1
+t = 0.7
 tc = 0.1
 nguong=0.006
-nguongc = 0.0006
+nguongc = 0.004
+
 macdinh=0
 
 
@@ -176,6 +177,7 @@ while run:
                     elif xh1<ldt-11:
                         xh1+=1
                         h1 = data[xh1:xh1+10]
+                    sd.play(h1[x1][0], sr)
                 elif y==2:
                     h2[x2][1] = 'x'
                     if x2<len(h2)-1:
@@ -183,6 +185,7 @@ while run:
                     elif xh2<ldtc-11:
                         xh2+=1
                         h2 = h1[x1][2][xh2:xh2+10]
+                    sd.play(h2[x2][0], sr)
             if event.key == pygame.K_p:
                 if y==1:
                     plot(h1[x1][0], t)
