@@ -33,7 +33,7 @@ def decode_emotion_vi(encode_emotion):
         case 0:
             return 'trung lập'
         case 1:
-            return 'hạnh phúc'
+            return 'vui vẻ'
         case 2:
             return 'buồn'
         case 3:
@@ -116,7 +116,7 @@ def cx(s=6):
         be_mat.blit(text2, (150, 130))
     elif s==1:
         be_mat.blit(text1, (190, 30))
-        be_mat.blit(text2, (120, 130))
+        be_mat.blit(text2, (196, 130))
     elif s==2:
         be_mat.blit(text1, (230, 30))
         be_mat.blit(text2, (210, 130))
