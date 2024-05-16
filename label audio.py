@@ -18,7 +18,7 @@ y = 1
 
 save = False
 
-data, sr = librosa.load('x.mp3')
+data, sr = librosa.load('x3.mp3')
 data = xl1(data, t, nguong, macdinh)
 
 ldt = len(data)
@@ -47,9 +47,6 @@ while run:
             if save==False:
                 run=False
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_q:
-                if save==False:
-                    run=False
             if event.key == pygame.K_0:
                 if y==1:
                     h1[x1][1] = 0
